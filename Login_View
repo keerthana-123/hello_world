@@ -1,0 +1,89 @@
+import React,{component} from 'react'
+import {StyleSheet, Text, TextInput, Button, TouchHighlight, Image, Alert} from'react-native';
+export default class LoginView extends c Contructor(Props){
+Super(Props);
+state = {
+email:'',
+password:'';
+}
+}
+onclickListener = (ViewId)=>{
+Alert.alert("Alert","ButtenPressed
+}
+render(){
+return(
+<View style = {styles.container}>
+<View imagre style = {style.inputcontain
+<TextInput style = {style.inputplaceholder ="Email"
+keyboardType = "email-address
+underlinecolorAndroid = 'tra
+onchangeText = {(email)=>t
+</View>
+<View style = {styles.inputcontain
+<Image style = {style.inputIcon
+<TextInput style = {style.input
+placeholder ="password"
+secure TextEntry = {true}
+underlineColorAndroid = 'tra
+onchangeText = {(password) = 
+</View>
+<TouchableHighlight style = {[styl
+<Text style = {styles.loginText}
+</TouchableHighlight>
+<TouchableHighlight style = {[styl
+<Text>Forget your password?</Text>
+</TouchableHighlight>
+<TouchableHighlight style = {[styl
+<Text>Register</Text>
+</TouchableHighlight>
+</view>
+);
+}
+}
+const styles = StyleSheet.Create({
+Container:{
+flex: 1,
+justifyContent:'center',
+alignItems:'center',
+backgroundColor:'#DCDCDC';
+},
+inputContainer :{
+borderBpttomColor:'#F5FCFF';
+backgroundColor:'#FFFFFF',
+borderRadius:30,
+borderBottomWidth:1,
+width:250,
+height:45,
+marginBottom:20,
+flexDirection:'row,
+alignItems:'center'
+},
+inputs:{
+height:45,
+marginLeft:16,
+borderNBottomColor:'#FFFFFFF',
+flex:1,
+}
+inputIcon:{
+width:30,
+height:30,
+marginLeft:15,
+justifyContent:'center'
+},
+buttonContainer:{
+height:45,
+flexDirection:'row',
+justifyContent='center',
+alignItems:'center',
+marginBottom:20, 
+width:250,borderRadius:30,
+};
+loginButton:{
+backgroundColor:"#00b5ec",
+};
+loginText:{
+color:'white',
+}
+}
+);
+
